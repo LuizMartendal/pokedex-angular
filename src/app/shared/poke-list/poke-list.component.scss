@@ -1,0 +1,110 @@
+@use '../../../configs/scss/variables.scss';
+@use '../../../configs/scss/animations.scss';
+
+:host {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .pokemon {
+      display: flex;
+
+      width: 21vw;
+      height: 18vh;
+
+      border-radius: 1vw;
+      margin-top: 3%;
+      margin-left: 2%;
+      margin-right: 2%;
+      padding: 2%;
+
+      background-color: white;
+      text-decoration: none;
+      color: var(--primary-color);
+
+      .pokemon-status {
+        display: flex;
+        flex-direction: column;
+        font-size: 2vh;
+        font-style: italic;
+
+        h2:hover {
+          background-color: rgb(200, 200, 200);
+          border-radius: 1vw;
+          padding: 2px;
+        }
+
+        ul {
+          position: relative;
+          bottom: 2vh;
+          right: 2vw;
+          justify-content: left;
+          display: flex;
+          flex-direction: column;
+
+          li {
+            list-style-type: none;
+            background-color: rgb(242, 242, 242);
+            text-align: center;
+            border-radius: 1vw;
+            margin: 1px;
+          }
+
+          li:hover {
+            background-color: rgb(200, 200, 200);
+            border-radius: 1vw;
+            padding: 5px;
+          }
+        }
+      }
+
+      .pokemon-image {
+        position: relative;
+        left: 8em;
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        background: url('../../../assets/bg/Bolinhas.png');
+      }
+
+      img {
+        width: 80%;
+        height: 10vh;
+      }
+
+      img:hover {
+        width: 100%;
+        height: 12vh;
+      }
+    }
+    .pokemon:hover {
+      height: 20vh;
+    }
+
+    .paginator {
+      margin-top: 3%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50vw;
+
+      mat-paginator {
+        height: 5vh;
+        padding-bottom: 20px;
+        border-radius: 1vw;
+      }
+    }
+  }
+
+  .errorImage {
+    padding: 2rem;
+    img {
+      height: 50vh;
+      width: 50vw;
+    }
+  }
+}
+

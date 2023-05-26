@@ -1,0 +1,30 @@
+@use '../../../configs/scss/variables.scss';
+@use "../../../configs/scss/animations.scss";
+
+:host {
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2vh;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+
+    input {
+      width: 95%;
+      background: none;
+      border: none;
+      height: 100%;
+      font-size: 1em;
+      color: white;
+      outline: none;
+      font-weight: 100;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+  }
+}

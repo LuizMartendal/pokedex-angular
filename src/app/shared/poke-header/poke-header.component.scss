@@ -1,0 +1,11 @@
+@use '../../../configs/scss/animations.scss';
+
+:host {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5vh 25vw 3vh 25vw;
+  }
+}
