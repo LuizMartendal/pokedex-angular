@@ -1,34 +1,52 @@
-@use '../../../configs/scss/variables.scss';
-@use '../../../configs/scss/animations.scss';
+@use '/src/assets/variables.scss';
+@use '/src/assets/animations.scss';
 
 :host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  app-poke-search {
+    width: 40vw;
+    height: 5vh
+  }
+
   section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
+    width: 50vw;
+
     .pokemon {
       display: flex;
 
-      width: 21vw;
+      width: 20vw;
       height: 18vh;
 
-      border-radius: 1vw;
-      margin-top: 3%;
-      margin-left: 2%;
-      margin-right: 2%;
-      padding: 2%;
+      border-radius: 1rem;
+      margin-top: 3vh;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      padding: auto;
 
       background-color: white;
       text-decoration: none;
       color: var(--primary-color);
 
       .pokemon-status {
+        width: 40%;
+        height: 100%;
+
         display: flex;
         flex-direction: column;
-        font-size: 2vh;
         font-style: italic;
+
+        h2 {
+          font-size: 1.5vw;
+        }
 
         h2:hover {
           background-color: rgb(200, 200, 200);
@@ -37,9 +55,6 @@
         }
 
         ul {
-          position: relative;
-          bottom: 2vh;
-          right: 2vw;
           justify-content: left;
           display: flex;
           flex-direction: column;
@@ -50,6 +65,7 @@
             text-align: center;
             border-radius: 1vw;
             margin: 1px;
+            font-size: 1vw;
           }
 
           li:hover {
@@ -61,13 +77,10 @@
       }
 
       .pokemon-image {
-        position: relative;
-        left: 8em;
         display: flex;
-        width: 30%;
-        justify-content: center;
+        width: 60%;
+        justify-content: flex-end;
         align-items: center;
-        background: url('../../../assets/bg/Bolinhas.png');
       }
 
       img {

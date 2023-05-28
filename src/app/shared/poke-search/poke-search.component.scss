@@ -1,7 +1,11 @@
-@use '../../../configs/scss/variables.scss';
-@use "../../../configs/scss/animations.scss";
+@use '/src/assets/variables.scss';
+@use '/src/assets/animations.scss';
 
 :host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   form {
     display: flex;
     align-items: center;
@@ -10,6 +14,8 @@
     padding: 2vh;
     border-radius: 25px;
     margin-bottom: 1vh;
+    width: 35vw;
+    height: 2.5vh;
 
     input {
       width: 95%;

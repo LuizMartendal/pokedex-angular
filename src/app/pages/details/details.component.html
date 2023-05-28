@@ -7,15 +7,9 @@
   </section>
 
   <section class="pokemon-status">
-    <img [src]="pokemon[0].sprites.other.dream_world.front_default"
-         [alt]="pokemon[0].name"
-         class="fadeIn"
-    >
-
     <article class="pokemon-status-statistics">
       <section>
         <h3 class="slideInDown">Estatísticas</h3>
-
         <ol>
           <li *ngFor="let value of pokemon[0].stats" class="slideInDown">
             {{ value.stat.name }}
@@ -24,12 +18,16 @@
             </strong>
           </li>
         </ol>
-
-        <a [routerLink]="['']" class="btn slideInUp">
-          Voltar
-        </a>
       </section>
     </article>
-
+    <div class="image">
+      <img [src]="pokemon[0].sprites.other.dream_world.front_default"
+        [alt]="pokemon[0].name"
+        class="fadeIn"
+      >
+    </div>
   </section>
+  <a [routerLink]="['']" class="btn slideInUp">
+    Voltar
+  </a>
 </main>

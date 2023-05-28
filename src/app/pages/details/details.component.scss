@@ -1,65 +1,61 @@
-@use '../../../configs/scss/animations.scss';
+@use '/src/assets/animations.scss';
 
 :host {
   main {
-    margin-top: 5vh;
+    flex-direction: column;
 
     .pokemon-names {
-      position: relative;
+      margin-top: 8vh;
+      margin-left: 30vw;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
       height: 5vh;
 
-      padding: 2vw;
-
       h1 {
         color: white;
-        font-size: 2rem;
+        font-size: 2.5vw;
         text-transform: capitalize;
         font-family: Arial, Helvetica, sans-serif;
         font-style: italic;
         font-weight: 200;
+        margin-right: 20%;
       }
 
       h2 {
-        position: absolute;
+        position: relative;
         font-weight: 100;
-        top: 0;
-        font-size: 3rem;
+        bottom: 5vh;
+        font-size: 3vw;
         color: rgba(255, 255, 255, 0.1);
       }
     }
     .pokemon-status {
-      position: relative;
-
       background-color: white;
 
-      bottom: 5vh;
       border-radius: 5rem;
-      height: 80vh;
+      width: 40vw;
+      height: 50vh;
 
-      img {
-        position: absolute;
-        bottom: 60vh;
-
-        height: 30vh;
-        width: 15vw;
-      }
+      display: flex;
+      flex-direction: row;
 
       .pokemon-status-statistics {
-        position: relative;
-        top: 20vh;
+        width: 70%;
+        height: 50%;
 
+        padding: 2vh;
         section {
           h3 {
             padding: 2rem;
             padding-bottom: 0;
-            font-size: 2rem;
+            font-size: 1.5vw;
             color: rgb(244, 79, 79);
             font-style: italic;
             text-decoration-line: underline;
+            margin-bottom: 8vh;
           }
 
           ol {
@@ -72,30 +68,37 @@
               justify-content: space-between;
               list-style-type: none;
               text-transform: capitalize;
+              font-size: 1vw;
             }
-          }
-
-          .btn {
-            position: absolute;
-            left: 4vw;
-            top: 50vh;
-            padding: 1rem;
-
-            width: 40vw;
-
-            border-radius: 1rem;
-            text-decoration: none;
-            text-align: center;
-
-            background-color: rgb(244, 79, 79);
-            color: white;
-          }
-
-          .btn:hover {
-            background-color: rgb(252, 38, 38);
           }
         }
       }
+      .image {
+        width: 30%;
+        height: 100%;
+        img {
+          height: 25vh;
+          width: 15vw;
+        }
+      }
+    }
+    .btn {
+      padding: 1rem;
+      margin-top: 4vh;
+
+      width: 25vw;
+
+      border-radius: 1rem;
+      text-decoration: none;
+      text-align: center;
+
+      background-color: rgb(244, 79, 79);
+      color: white;
+      font-size: 1vw;
+    }
+
+    .btn:hover {
+      background-color: rgb(252, 38, 38);
     }
   }
 }
