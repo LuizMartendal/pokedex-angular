@@ -101,4 +101,94 @@
       background-color: rgb(252, 38, 38);
     }
   }
+
+  @media screen and (max-width: 1080px) {
+    main {
+      flex-direction: column;
+
+      .pokemon-names {
+
+        height: 5vh;
+
+        h1 {
+          font-size: 2.5vw;
+        }
+
+        h2 {
+          font-size: 3vw;
+        }
+      }
+      .pokemon-status {
+        width: 60vw;
+        height: 50vh;
+
+        .pokemon-status-statistics {
+          width: 70%;
+          height: 50%;
+          section {
+            h3 {
+              font-size: 1.5vw;
+            }
+
+            ol {
+              li {
+                font-size: 1vw;
+              }
+            }
+          }
+        }
+        .image {
+          width: 30%;
+          height: 100%;
+          img {
+            height: 25vh;
+            width: 15vw;
+          }
+        }
+      }
+      .btn {
+        width: 35vw;
+        font-size: 1vw;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+
+      .pokemon-names {
+
+        h1 {
+          font-size: 4.5vw;
+        }
+
+        h2 {
+          font-size: 6.5vw;
+        }
+      }
+      .pokemon-status {
+        width: 80vw;
+        height: 50vh;
+
+        .pokemon-status-statistics {
+          section {
+            h3 {
+              font-size: 3.5vw;
+            }
+
+            ol {
+              li {
+                font-size: 2.5vw;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        width: 45vw;
+        font-size: 2.5vw;
+      }
+    }
+  }
 }

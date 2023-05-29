@@ -119,5 +119,323 @@
       width: 50vw;
     }
   }
+
+  @media screen and (max-width: 920px) {
+    app-poke-search {
+      width: 60vw;
+      height: 5vh
+    }
+    section {
+      width: 70vw;
+
+      .pokemon {
+        width: 30vw;
+        height: 18vh;
+
+        .pokemon-status {
+          width: 40%;
+          height: 100%;
+
+          h2 {
+            font-size: 1.5vw;
+          }
+
+          ul {
+            justify-content: left;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              list-style-type: none;
+              background-color: rgb(242, 242, 242);
+              text-align: center;
+              border-radius: 1vw;
+              margin: 1px;
+              font-size: 1vw;
+            }
+
+            li:hover {
+              background-color: rgb(200, 200, 200);
+              border-radius: 1vw;
+              padding: 5px;
+            }
+          }
+        }
+
+        .pokemon-image {
+          display: flex;
+          width: 60%;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        img {
+          width: 80%;
+          height: 10vh;
+        }
+
+        img:hover {
+          width: 100%;
+          height: 12vh;
+        }
+      }
+      .pokemon:hover {
+        height: 20vh;
+      }
+
+      .paginator {
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+
+        mat-paginator {
+          height: 5vh;
+          padding-bottom: 20px;
+          border-radius: 1vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    app-poke-search {
+      width: 80vw;
+      height: 5vh
+    }
+    section {
+      width: 100vw;
+
+      .pokemon {
+        width: 45vw;
+        height: 18vh;
+
+        .pokemon-status {
+          width: 40%;
+          height: 100%;
+
+          h2 {
+            font-size: 2vw;
+          }
+
+          ul {
+            justify-content: left;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              list-style-type: none;
+              background-color: rgb(242, 242, 242);
+              text-align: center;
+              border-radius: 1vw;
+              margin: 1px;
+              font-size: 1.5vw;
+            }
+
+            li:hover {
+              background-color: rgb(200, 200, 200);
+              border-radius: 1vw;
+              padding: 5px;
+            }
+          }
+        }
+
+        .pokemon-image {
+          display: flex;
+          width: 60%;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        img {
+          width: 80%;
+          height: 10vh;
+        }
+
+        img:hover {
+          width: 100%;
+          height: 12vh;
+        }
+      }
+      .pokemon:hover {
+        height: 20vh;
+      }
+
+      .paginator {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+
+        mat-paginator {
+          width: 90vw;
+          height: 5vh;
+          padding-bottom: 20px;
+          border-radius: 1vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    app-poke-search {
+      width: 80vw;
+      height: 5vh
+    }
+    section {
+      width: 100vw;
+
+      .pokemon {
+        width: 45vw;
+        height: 18vh;
+
+        .pokemon-status {
+          width: 40%;
+          height: 100%;
+
+          h2 {
+            font-size: 2vw;
+          }
+
+          ul {
+            justify-content: left;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              list-style-type: none;
+              background-color: rgb(242, 242, 242);
+              text-align: center;
+              border-radius: 1vw;
+              margin: 1px;
+              font-size: 1.5vw;
+            }
+
+            li:hover {
+              background-color: rgb(200, 200, 200);
+              border-radius: 1vw;
+              padding: 5px;
+            }
+          }
+        }
+
+        .pokemon-image {
+          display: flex;
+          width: 60%;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        img {
+          width: 80%;
+          height: 10vh;
+        }
+
+        img:hover {
+          width: 100%;
+          height: 12vh;
+        }
+      }
+      .pokemon:hover {
+        height: 20vh;
+      }
+
+      .paginator {
+        margin-top: 3%;
+        width: 100%;
+        height: 5vh;
+
+        mat-paginator {
+          width: 100%;
+          height: 100%;
+          height: 5vh;
+          padding-bottom: 20px;
+          border-radius: 1vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    app-poke-search {
+      width: 80vw;
+      height: 5vh
+    }
+    section {
+      width: 100vw;
+
+      .pokemon {
+        width: 60vw;
+        height: 18vh;
+
+        .pokemon-status {
+          width: 40%;
+          height: 100%;
+
+          h2 {
+            font-size: 3vw;
+          }
+
+          ul {
+            justify-content: left;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              list-style-type: none;
+              background-color: rgb(242, 242, 242);
+              text-align: center;
+              border-radius: 1vw;
+              margin: 1px;
+              font-size: 2.5vw;
+            }
+
+            li:hover {
+              background-color: rgb(200, 200, 200);
+              border-radius: 1vw;
+              padding: 5px;
+            }
+          }
+        }
+
+        .pokemon-image {
+          display: flex;
+          width: 60%;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        img {
+          width: 80%;
+          height: 10vh;
+        }
+
+        img:hover {
+          width: 100%;
+          height: 12vh;
+        }
+      }
+      .pokemon:hover {
+        height: 20vh;
+      }
+
+      .paginator {
+        margin-top: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        height: 8vh;
+
+        mat-paginator {
+          width: 90vw;
+          height: 100%;
+          padding-bottom: 20px;
+          border-radius: 1vw;
+        }
+      }
+    }
+  }
 }
 
