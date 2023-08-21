@@ -1,3 +1,3 @@
 # Pokedex
 
-https://rique25.github.io/Projeto-4-Pokedex/
+https://luizmartendal.github.io/Projeto-4-Pokedex/
