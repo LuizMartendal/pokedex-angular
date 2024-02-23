@@ -10,4 +10,4 @@ Basicamente o projeto consome uma API que está disponivel gratuitamente na inte
 ## Como executar
 Você pode testa-lo acessando o link: https://luizmartendal.github.io/Pokedex-Angular/ onde o projeto foi disponibilizado no Github pages
 #### ou
-Com o NodeJS e Angular CLI instalados e o repositório clonado, inicie com ```npm i``` ou ```npm i --f```. Com a pasta do node_modules instalada, inicie a aplicação com ```ng s --o```
+Com o NodeJS e Angular CLI ```npm i -g @angular/cli``` instalados e o repositório clonado, inicie com ```npm i``` ou ```npm i --f```. Com a pasta do node_modules instalada, inicie a aplicação com ```ng s --o```
